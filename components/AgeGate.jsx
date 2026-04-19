@@ -15,10 +15,28 @@ export default function AgeGate() {
     setShow(false);
   };
 
+  const handleExit = (e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    // This protocol attempts to force Safari on iOS/macOS
+    const safariUrl = "safari-https://www.google.com";
+    const defaultUrl = "https://www.google.com";
+
+    // Attempt to redirect to Safari
+    window.location.href = safariUrl;
+
+    // Fallback: If the protocol isn't supported, 
+    // it will navigate to the default browser URL after a short delay
+    setTimeout(() => {
+      window.location.href = defaultUrl;
+    }, 500);
+  };
+
   if (!show) return null;
 
   return (
     <div className="fixed inset-0 z-[9999] bg-[#040404f7] backdrop-blur-md flex items-center justify-center p-4">
+      {/* Container with border only - no shadows applied */}
       <div className="max-w-[420px] w-full bg-surface border border-border p-10 text-center">
         {/* Pulsing Icon */}
         <div className="w-16 h-16 border border-gold rounded-full flex items-center justify-center mx-auto mb-6 coin-pulse">
@@ -32,13 +50,19 @@ export default function AgeGate() {
           Vous devez avoir au moins 18 ans pour accéder à notre cave premium et nos services événementiels.
         </p>
 
-        <button onClick={handleConfirm} className="btn-gold w-full mb-4">
+        <button 
+          onClick={handleConfirm} 
+          className="btn-gold w-full mb-4 cursor-pointer"
+        >
           J'ai 18 ans ou plus — Entrer
         </button>
 
-        <a href="https://google.com" className="text-[0.7rem] uppercase tracking-widest text-muted hover:text-red transition-colors">
+        <button 
+          onClick={handleExit} 
+          className="block w-full text-[0.7rem] uppercase tracking-widest text-muted hover:text-red transition-colors bg-transparent border-none cursor-pointer"
+        >
           Je suis mineur — Quitter
-        </a>
+        </button>
 
         <p className="mt-12 text-[10px] text-muted2 leading-tight uppercase tracking-tighter">
           L'abus d'alcool est dangereux pour la santé. À consommer avec modération.
