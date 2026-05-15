@@ -20,7 +20,7 @@ const FEATURED = [
     category: "Champagne",
     price: 950,
     tag: "Exclusif",
-    img: "https://images.unsplash.com/photo-1547595628-c61a32f82bf3?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1770306924173-222f890bb547?w=600&q=80",
   },
   {
     id: 3,
@@ -77,9 +77,9 @@ export default function NewArrivals() {
             <span className="text-[9px] uppercase tracking-widest text-gold font-medium">
               {product.category}
             </span>
-            <h3 className="text-lg font-serif text-cream leading-tight uppercase tracking-tighter line-clamp-2 h-12 group-hover:text-gold transition-colors">
+            <p className="text-lg font-serif text-cream leading-tight uppercase tracking-tighter line-clamp-2 min-h-[3rem] group-hover:text-gold transition-colors">
               {product.name}
-            </h3>
+            </p>
 
             <div className="pt-4 flex justify-between items-center border-t border-border/50">
               <span className="text-base font-light text-cream">

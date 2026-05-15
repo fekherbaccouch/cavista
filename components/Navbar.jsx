@@ -94,7 +94,7 @@ export default function Navbar() {
           <img
             src="/logo.webp"
             alt="Cavista Logo"
-            className="w-28 sm:w-32 md:w-40 h-auto object-contain transition-all duration-300 mix-blend-multiply"
+            className="w-28 sm:w-32 md:w-40 h-auto object-contain transition-all duration-300"
           />
         </Link>
 

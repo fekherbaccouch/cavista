@@ -21,7 +21,7 @@ const categories = [
     rowSpan: "lg:row-span-2",
     minH: "min-h-[420px]",
     icon: <FluteGlass className="w-14 h-14 text-gold" />,
-    img: "https://images.unsplash.com/photo-1547595628-c61a32f82bf3?q=80&w=1287&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1770306924173-222f890bb547?q=80&w=1287&auto=format&fit=crop",
     href: "/shop?cat=champagne",
   },
   {

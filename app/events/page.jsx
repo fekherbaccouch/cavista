@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
-  ChevronRight, Calendar, Users, Sparkles, Music,
+  ChevronRight, Calendar, Users, Sparkles,
   Camera, UtensilsCrossed, Wine, Star, CheckCircle2,
   Phone, MessageCircle,
 } from "lucide-react";
@@ -22,7 +22,6 @@ const FORFAITS = [
       "1 cocktailiste",
       "Sélection de 6 cocktails",
       "Matériel de bar inclus",
-      "Jusqu'à 50 invités",
     ],
     cta: "Demander un devis",
     ctaHref: "/events/devis",
@@ -42,7 +41,6 @@ const FORFAITS = [
       "Carte cocktails illimitée",
       "Kémia & Tapas inclus",
       "Décoration bar personnalisée",
-      "Jusqu'à 150 invités",
       "Photo-call & scénographie",
     ],
     cta: "Réserver maintenant",
@@ -63,7 +61,6 @@ const FORFAITS = [
       "Kémia & banquet gastronomique",
       "Décoration & scénographie haut-de-gamme",
       "Service traiteur",
-      "Invités illimités",
       "Coordinateur événementiel dédié",
     ],
     cta: "Nous contacter",
@@ -107,7 +104,6 @@ const SERVICES = [
   { icon: <UtensilsCrossed size={20} />, label: "Kémia & Tapas", desc: "Bouchées gastronomiques tunisiennes et méditerranéennes" },
   { icon: <Sparkles size={20} />, label: "Bartending Flair", desc: "Show de jonglage et techniques spectaculaires" },
   { icon: <Camera size={20} />, label: "Scénographie", desc: "Décoration et mise en scène du bar selon votre thème" },
-  { icon: <Music size={20} />, label: "Ambiance DJ", desc: "Musique live ou DJ partenaires sur demande" },
   { icon: <Users size={20} />, label: "Coordination", desc: "Chef de projet dédié de la planification au J-Day" },
 ];
 

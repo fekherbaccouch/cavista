@@ -83,9 +83,9 @@ export default function AccessoryCard({ product }) {
             </span>
           )}
 
-          <h3 className="text-sm font-semibold text-white leading-snug line-clamp-2 group-hover:text-gold-light transition-colors">
+          <p className="text-sm font-semibold text-white leading-snug line-clamp-2 group-hover:text-gold-light transition-colors">
             {product.name}
-          </h3>
+          </p>
 
           {product.rating && (
             <div className="flex items-center gap-1.5">
